@@ -1,4 +1,5 @@
 
+import { useEffect } from "react";
 import Header from "@/components/Header";
 import Hero from "@/components/workers/WorkersHero";
 import Benefits from "@/components/workers/WorkersBenefits";
@@ -9,6 +10,10 @@ import Footer from "@/components/Footer";
 import WorkersConversionPopup from "@/components/WorkersConversionPopup";
 
 const ForWorkers = () => {
+  useEffect(() => {
+    document.title = "Find Remote VA Jobs - VABunny.com | Work from Home Opportunities for Filipino Virtual Assistants";
+  }, []);
+
   return (
     <div className="min-h-screen">
       <Header />
